@@ -22,10 +22,17 @@
         value: price * quantity
       });
     }
+    const login = (method) => {
+      gtag('event', 'login', {
+        method: method,
+      });
+    }
   </script>
 </head>
 
 <body>
   <h1>Google Analytics 4 implemented with gtag.js</h1>
-  <a id="add_to_cart" onclick="add_to_cart('1234','Purple Turing Machine','Abstract machine',100.0,1)" href="#">add to cart</a>
+  <a id="add_to_cart" onclick="add_to_cart('1234','Purple Turing Machine','Abstract machine',100.0,1)" href="#">add to
+    cart</a>
+  <a id="login" onclick="login('Email')" href="#">Login</a>
 </body>
